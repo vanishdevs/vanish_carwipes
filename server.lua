@@ -1,11 +1,13 @@
---RegisterCommand(Config.command, function(source, args, rawCommand) TriggerClientEvent("delallveh", -1) end, Config.admincommand)
+RegisterCommand(Config.command, function(source, args, rawCommand) TriggerClientEvent("delallveh", -1) end, Config.admincommand)
 
-TriggerEvent('es:addGroupCommand', Config.command, 'staffperms', function(source, args, user)
+-- Use if using essential mode
+--[[
+TriggerEvent('es:addGroupCommand', Config.command, 'changeme', function(source, args, user)
 		TriggerClientEvent("delallveh", -1)
 end, function(source, args, user)
 	TriggerClientEvent('chat:addMessage', source, { args = { '^1SYSTEM', 'Insufficient Permissions.' } })
 end, {help = "/delallveh"})
-
+]]
 
 function CleanUpCronTask(d, h, m)
 	TriggerClientEvent("delallveh", -1)
