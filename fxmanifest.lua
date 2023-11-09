@@ -1,16 +1,12 @@
-server_script "X5RS.lua"
-client_script "X5RS.lua"
 fx_version 'bodacious'
 game 'gta5'
-description 'Car cleanup resource made by 2zVanish' -- DO NOT CHANGE THIS (Give me some credit 😀)
-lua54 'yes'
 
-escrow_ignore {
-    'config.lua'
-}
+author '2zVanish'
+description 'Car cleanup resource'
 
 client_scripts {
-    'client/*.lua',
+    'client.lua',
+    'entityer.lua'
 }
 
 server_script 'server/*.lua'
