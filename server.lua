@@ -14,9 +14,9 @@ function CleanUpCronTask(d, h, m)
 end
 
 if Config.cleanuptime == 30 then
-    TriggerEvent('cron:runAt', 0, 30, CleanUpCronTask)     ---- Edit all these lines or add more 0, 30 means the first cleanup will be done at 00:30 server time
-    TriggerEvent('cron:runAt', 1, 30, CleanUpCronTask)     ---- 01:30 Server time
-    TriggerEvent('cron:runAt', 2, 30, CleanUpCronTask)     ---- 02:30 Server time and so on
+    TriggerEvent('cron:runAt', 0, 30, CleanUpCronTask)   
+    TriggerEvent('cron:runAt', 1, 30, CleanUpCronTask)    
+    TriggerEvent('cron:runAt', 2, 30, CleanUpCronTask)  
     TriggerEvent('cron:runAt', 3, 30, CleanUpCronTask)
     TriggerEvent('cron:runAt', 4, 30, CleanUpCronTask)
     TriggerEvent('cron:runAt', 5, 30, CleanUpCronTask)
