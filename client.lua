@@ -1,5 +1,5 @@
-RegisterNetEvent("delallveh")
-AddEventHandler("delallveh", function ()
+RegisterNetEvent("vanishdev:delallveh")
+AddEventHandler("vanishdev:delallveh", function ()
 	TriggerEvent('chat:addMessage', {
         	template = '<div style="padding: 10px; margin: 10px; background-color: rgba(202, 45, 45, 1); border-radius: 5px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); color: white; font-family: Arial, sans-serif; font-size: 20px; font-weight: bold; text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);"><i class="fas fa-car-crash"></i> {0}:<br> {1}</div>',
         	args = { 'City Tow', 'A city car tow is coming in ' .. Config.timebeforecleanup .. ' minutes.' }
@@ -19,7 +19,7 @@ AddEventHandler("delallveh", function ()
             		SetVehicleHasBeenOwnedByPlayer(vehicle, false) 
             		SetEntityAsMissionEntity(vehicle, false, false) 
             		DeleteVehicle(vehicle)
-            		if (DoesEntityExist(vehicle)) then 
+            		if DoesEntityExist(vehicle) then 
                 		DeleteVehicle(vehicle) 
             		end
         	end
