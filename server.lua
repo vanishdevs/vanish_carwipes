@@ -1,16 +1,7 @@
-RegisterCommand(Config.command, function(source, args, rawCommand) TriggerClientEvent("delallveh", -1) end, Config.admincommand)
-
--- Use if using essential mode
---[[
-TriggerEvent('es:addGroupCommand', Config.command, 'changeme', function(source, args, user)
-		TriggerClientEvent("delallveh", -1)
-end, function(source, args, user)
-	TriggerClientEvent('chat:addMessage', source, { args = { '^1SYSTEM', 'Insufficient Permissions.' } })
-end, {help = "/delallveh"})
-]]
+RegisterCommand(Config.command, function(source, args, rawCommand) TriggerClientEvent("vanishdev:delallveh", -1) end, Config.admincommand)
 
 function CleanUpCronTask(d, h, m)
-	TriggerClientEvent("delallveh", -1)
+	TriggerClientEvent("vanishdev:delallveh", -1)
 end
 
 if Config.cleanuptime == 30 then
