@@ -1,0 +1,4 @@
+{
+    "warnings": "Vehicle cleanup is scheduled in %s minute(s)",
+    "complete": "Vehicle cleanup has been complete"
+}
