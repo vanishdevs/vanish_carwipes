@@ -1,13 +1,9 @@
-fx_version 'bodacious'
+fx_version 'cerulean'
 game 'gta5'
 
-author '2zVanish'
-description 'Car cleanup resource that does automatic car wipes every so often'
+author 'vanishdev'
 
-client_scripts {
-    'client.lua',
-    'entityiter.lua'
-}
+shared_scripts { '@ox_lib/init.lua', 'shared/*.lua' }
+client_scripts { 'entityiter.lua', 'client.lua' }
 server_script 'server.lua'
-shared_script 'config.lua'
 
