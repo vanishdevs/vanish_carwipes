@@ -3,7 +3,7 @@ lib.addCommand('delallveh', {
   help = 'Deletes all vehicles on the server',
   restricted = config.command.restricted
 }, function(source, args, raw)
-  TriggerClientEvent('vanish_carwipes:start_wipe', -1)
+  TriggerClientEvent('vanish_carwipes:startWipe', -1)
 end)
 
 --- @return integer Player count
@@ -18,7 +18,7 @@ local function triggerWipeIfAllowed(periodic)
     print(('vanish_carwipes: skipped wipe (players %d < min %d)'):format(playerCount(), periodic.minPlayers))
     return
   end
-  TriggerClientEvent('vanish_carwipes:start_wipe', -1)
+  TriggerClientEvent('vanish_carwipes:startWipe', -1)
 end
 
 --- @param times table Array of time strings (e.g., {'06:00','12:00'})

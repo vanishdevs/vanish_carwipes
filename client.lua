@@ -93,5 +93,5 @@ local function startWipe()
   showNotification(locale('complete'))
 end
 
-RegisterNetEvent('vanish_carwipes:start_wipe')
-AddEventHandler('vanish_carwipes:start_wipe', startWipe)
+RegisterNetEvent('vanish_carwipes:startWipe')
+AddEventHandler('vanish_carwipes:startWipe', startWipe)
